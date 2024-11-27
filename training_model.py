@@ -12,7 +12,7 @@ df = pd.read_csv("D:\AIF_W4\CICD_HANDSON\Week3NikeProductDescriptionsGenerator.c
 
 descriptions = df['Product Description'].tolist()
 
-# tokenize
+# tokenize product description
 def preprocess(desc):
   encodings = tokenizer(desc, truncation=True, padding=True)
   # return tokenizer(descriptions, return_tensors="pt", truncation=True, padding=True)
